@@ -1,0 +1,69 @@
+
+modLoader="javafml"
+loaderVersion="[1,)"
+
+
+license="All Rights Reserved"
+
+[[mods]]
+
+modId="cbc_fuze_sable_fix"
+
+version="1.0.0"
+
+displayName="CBC fuze Sable fix"
+
+authors="Zizazr"
+
+description='''
+Fix for the shells from Create Big Cannons that don't explode when they collide with the ground.
+'''
+
+[[mixins]]
+config="cbc_fuze_sable_fix.mixins.json"
+
+# The [[accessTransformers]] block allows you to declare where your AT file is.
+# If this block is omitted, a fallback attempt will be made to load an AT from META-INF/accesstransformer.cfg
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+# The coremods config file path is not configurable and is always loaded from META-INF/coremods.json
+
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.cbc_fuze_sable_fix]]
+modId="neoforge"
+type="required"
+
+versionRange="[21.1.228,)"
+# An ordering relationship for the dependency.
+# BEFORE - This mod is loaded BEFORE the dependency
+# AFTER - This mod is loaded AFTER the dependency
+ordering="NONE"
+# Side this dependency is applied on - BOTH, CLIENT, or SERVER
+side="BOTH"
+
+# Here's another dependency
+[[dependencies.cbc_fuze_sable_fix]]
+modId="minecraft"
+type="required"
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cbc_fuze_sable_fix]]
+modId="sable"
+type="required"
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="[1.0.6,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cbc_fuze_sable_fix]]
+modId="createbigcannons"
+type="required"
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="[5.11.3,)"
+ordering="NONE"
+side="BOTH"
+

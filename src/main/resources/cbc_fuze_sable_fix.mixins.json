@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.zizazr.cbc_fuze_sable_fix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ShellBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
